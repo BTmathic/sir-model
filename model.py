@@ -1,5 +1,6 @@
 import matplotlib.pyplot as pplot
 
+
 def run_sir_model(
         population = 10000,
         infection_seed = 80,
@@ -12,7 +13,8 @@ def run_sir_model(
         time = 1000
     ):
     """
-    Run a standard SIR model with death, for given data and plot results
+    Run a standard SIR model with possible recurring infection, death, and
+    vaccination for given data, and plot the results.
 
     Keyword arguments:
     population -- the population size for the SIR model
@@ -96,6 +98,7 @@ def run_sir_model(
     pplot.xlabel('Days')
     pplot.ylabel('People')
     pplot.show()
+
 
 '''
 #SIR
